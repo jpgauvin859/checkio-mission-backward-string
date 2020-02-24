@@ -11,26 +11,35 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ['val'],
+            "answer": 'lav',
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": [''],
+            "answer": '',
+        },
+        {
+            "input": ['ohho'],
+            "answer": 'ohho',
+        },
+        {
+            "input": ['123456789'],
+            "answer": '987654321',
+        },
     ],
     "Extra": [
+        
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": ['aa'],
+            "answer": 'aa',
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": ['1,2,3,4'],
+            "answer": '4,3,2,1',
+        },
+        {
+            "input": ['Welcome to CheckiO'],
+            "answer": 'OikcehC ot emocleW',
+        },
     ]
 }
