@@ -1,22 +1,18 @@
-"use strict";
+import assert from "assert";
 
-function backwardString(a) {
+function backwardString(value: string): string {
     // your code here
-    return undefined;
+    return '';
 }
 
-var assert = require('assert');
+console.log('Example:');
+console.log(backwardString('val'));
 
-if (!global.is_checking) {
-    console.log('Example:');
-    console.log(backwardString('val'));
+// These "asserts" are used for self-checking
+assert.equal(backwardString('val'), 'lav');
+assert.equal(backwardString(''), '');
+assert.equal(backwardString('ohho'), 'ohho');
+assert.equal(backwardString('123456789'), '987654321');
 
-    // These "asserts" are used for self-checking
-    assert.equal(backwardString('val'), 'lav');
-    assert.equal(backwardString(''), '');
-    assert.equal(backwardString('ohho'), 'ohho');
-    assert.equal(backwardString('123456789'), '987654321');
-
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
